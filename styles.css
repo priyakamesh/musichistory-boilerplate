@@ -68,6 +68,31 @@ a:active {
  	outline: 1px solid black;
  	margin-bottom: 1em;
  }
+
+ @media (max-width:900px) {
+ 	
+ 	body {
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+ 	#field-right {
+ 		display: block;
+ 		margin-left: 10px;
+ 		width: 100%;
+
+ 	}
+ 	#field-left {
+ 		margin-left: 10px;
+ 		width: 100%;
+ 	}
+ 	ul {
+ 		margin-left: 10px;
+ 	}
+ 	a:link {
+ 		font-size:10px;
+ 		padding-bottom:1em;
+ 	}
+ }
  
 
 
