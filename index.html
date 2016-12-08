@@ -3,99 +3,117 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+ <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="styles.css">
   <title>Music History</title>
 </head>
 
-<body>
-	<h1>Music History</h1>
-	<nav>
-		<ul>
-			<li><a href="#">View Music</a></li>
-			<li><a href="#">Add Music</a></li>
-			<li><a href="#">Profile</a></li>
-		</ul>
-	</nav>
-	
-	
-	<fieldset id="field-left">
-	<section>
-	<h3>Song Length</h3>
-	<input type="range" id="range">
-	<h3>Artist</h3>
-		<select>
-			<option value="null">select your Favorite Artist</option>
-			<option>A.R.Rahman</option>
-			<option>Illayaraja</option>
-			<option>Santhosh Narayanan</option>
-			<option>Deva</option>
-			<option>Imman</option>
-		</select>
-	</section>
+	<body>
+	<div class="container">
 
-	<section>
-
-	<h3>Album</h3>
-		<select>
-			<option value="null">Favorite songs</option>
-
-			<option></option>
-			<option></option>
-
-			<option></option>
-			<option></option>
-
-			<option></option>
-			<option></option>
-
-			<option></option>
-			<option></option>
-
-			<option></option>
-			<option></option>
-
-		</select>
-	</section>
-	<section>
-		<h3>Genre:</h3>
-		<table>
-		<th>
-		<tr>
-		<td><label><input type="checkbox" name="genre" value="Rock" class="genre">Rock</label></td>
-		<td><label><input type="checkbox" name="genre" value="Classical" class="genre">Classical</label></td>
-		</tr>
-		<tr>
-		<td><label><input type="checkbox" name="genre" value="Jazz" class="genre">Jazz</label></td>
-		<td><label><input type="checkbox" name="genre" value="Pop" class="genre">Pop</label></td></tr>
-		<tr>
-		<td><label><input type="checkbox" name="genre" value="HipHop" class="genre">HipHop</label></td>
-		<td><label><input type="checkbox" name="genre" value="Blues" class="genre">Blues</label></td>
-		</tr>
-		</th>
-		</table>
-	</section>
-	<button name="filter" id="filter">Filter</button>
-
-	</fieldset>
-	</td>
-	<td>
-	<fieldset id="field-right">
-		<h3>Song Name</h3>
-		<p>Artist Name | Album | Genre</p>
-
-		<h3 class="gap">Song Name</h3>
-		<p>Artist Name | Album | Genre</p>
-
-		<h3 class="gap">Song Name</h3>
-		<p>Artist Name | Album | Genre</p>
-
-		<h3 class="gap">Song Name</h3>
-		<p>Artist Name | Album | Genre</p>
-
-	</fieldset>
-	
+		<div class="row">
+		<h1 class="col-md-12">Music History</h1>
+				<nav class=" col-md-12  ">
+					<ul>
+						<li class="navbar col-md-2 test">View Music</li>
+						<li class="navbar col-md-2 test"><a href="#">Add Music</a></li>
+						<li class="navbar col-md-8 test"><a href="#">Profile</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="row">
+				<section class=" col-md-3 col-md-offset-1 sub_left">
+						<h3 class="col-md-12">Song Length :</h3>
+						<input type="range" id="range">
+						<h3>Artist</h3>
+							<select>
+								<option value="null">select your Favorite Artist</option>
+								<option>A.R.Rahman</option>
+								<option>Illayaraja</option>
+								<option>Santhosh Narayanan</option>
+								<option>Deva</option>
+								<option>Imman</option>
+							</select>
 
 
 
+
+						<h3>Album</h3>
+							<select>
+								<option value="null">Favorite songs</option>
+
+								<option></option>
+								<option></option>
+
+								<option></option>
+								<option></option>
+
+								<option></option>
+								<option></option>
+
+								<option></option>
+								<option></option>
+
+								<option></option>
+								<option></option>
+
+							</select>
+
+
+							<h3>Genre:</h3>
+							<table>
+								<th>
+									<tr>
+										<td><label><input type="checkbox" name="genre" value="Rock" class="genre">Rock</label></td>
+										<td><label><input type="checkbox" name="genre" value="Classical" class="genre">Classical</label></td>
+										</tr>
+										<tr>
+										<td><label><input type="checkbox" name="genre" value="Jazz" class="genre">Jazz</label></td>
+										<td><label><input type="checkbox" name="genre" value="Pop" class="genre">Pop</label></td></tr>
+										<tr>
+										<td><label><input type="checkbox" name="genre" value="HipHop" class="genre">HipHop</label></td>
+										<td><label><input type="checkbox" name="genre" value="Blues" class="genre">Blues</label></td>
+									</tr>
+								</th>
+							</table>
+
+							<button name="filter" id="filter">Filter</button>
+						</section>
+
+						<section class="col-md-7  .col-md-offset-* sub_right"  id ="mainContent" >
+							<h3 id= "song_1">Song Name</h3>
+							<span id="song1">Artist Name </span>|<span id="album"> Album </span>|<span> Genre</span>
+
+							<h3 class="gap" id="song_2">Song Name</h3>
+							<span id="song2">Artist Name</span> |<span id="album1"> Album</span>| Genre</p>
+
+							<h3 class="gap" id="song_3">Song Name</h3>
+							<span id="song3">Artist Name</span> |<span id="album2"> Album</span>| Genre</p>
+
+
+							<h3 class="gap" id="song_4">Song Name</h3>
+							<span id="song4">Artist Name</span> |<span id="album3"> Album</span>| Genre</p>
+
+
+							<h3 class="gap" id="song_5">Song Name</h3>
+							<span id="song5">Artist Name</span> |<span id="album4"> Album</span>| Genre</p>
+
+
+							<h3 class="gap" id="song_6">Song Name</h3>
+							<span id="song6">Artist Name</span> |<span id="album5"> Album</span>| Genre</p>
+
+
+							<h3 class="gap" id="song_7">Song Name</h3>
+							<span id="song7">Artist Name</span> |<span id="album6"> Album</span>| Genre</p>
+
+						</section>
+
+			</div><!-- end div=row -->
+	</div><!--end container-->
+	<script type="text/javascript" src="songs.js"></script>
 </body>
 </html>
